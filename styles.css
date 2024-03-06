@@ -1,0 +1,48 @@
+* {
+  font-family: poppins;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    120deg,
+    rgb(20, 20, 20) 10%,
+    rgb(40, 40, 40) 100%
+  );
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 2.5rem;
+  -webkit-text-stroke: 0.1rem black;
+  text-shadow: 3px 3px 2px gold;
+  color: white;
+  font-size: 3rem;
+}
+
+.contenedor_img {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.img_gallery {
+  height: 200px;
+  width: 300px;
+  background-color: transparent;
+  margin-bottom: 1.875rem;
+  filter: brightness(70%);
+  object-fit: cover;
+}
+
+.img_gallery:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  filter: brightness(100%);
+}
